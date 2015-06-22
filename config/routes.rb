@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  #get 'games/new'
+
+  #get 'games/show'
+
+  #get 'games/update'
+
+  #get 'games/destroy'
+
+  root  'home#index'
+  resource :game, :only => [:new, :show, :update, :destroy]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
