@@ -32,7 +32,7 @@ class Game
   end
 
   def guessed?
-    (word.split('')) - selected_letters).empty?
+    (word.split('') - selected_letters).empty?
   end
 
   def finished?
